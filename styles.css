@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #6366F1;
+    /* --accent-color: #3f83f8; */
+    --text-color: #333333;
+    /* --link-color: #2563eb; */
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #696969;
+    --bgcolor: #191627;
+    --harry: #9333EA;
+    --white: #ffffff;
+    --headcolor: #02828b;
+}
+
+#vb{
+    font-size: 2rem;
+}
+
+.darkmodebtn, .viewbtn, .ovbtn{
+    border: none;
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+.header-content{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 9px 30px rgba(108, 162, 255, 0.3);    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.logo-text{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--harry);
+}
+
+.nav-link{
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: var(--primary-color);
+    scale: 0.9;
+}
+
+.viewbtn{
+    display: none;
+}
+
+.nav{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+@media (min-width: 768px){
+    .header-content{
+        width: 75%;
+        height: 5rem;
+    }
+    .header{
+        height: 6rem;
+    }
+    .over{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .header-content{
+        bottom: 0;
+    }
+    .nav{
+        display: none;
+    }
+    .viewbtn{
+        display: flex;
+    }
+    .allbtn{
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+.ov{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.overlay-content{
+    margin-bottom: 1rem;
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: center;
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.over{
+    box-shadow: 0px 9px 30px rgba(108, 162, 255, 0.3);
+    position: fixed;
+    width: 97%;
+    bottom: 6rem;
+}
+.sp{
+    display: none;
+    justify-content: center;
+}
+
+.c{
+    display: flex;
+    justify-content: end;
+    height: 1.5rem;
+}
+
+.ov:hover{
+    color: var(--primary-color);
+    scale: 0.9;
+}
+
+/* ==================================================================================================================================================== */
+
+/* .homediv{
+    display: grid;
+    grid-template-areas: 
+        "check check"
+        "leftbox rightbox"
+    ;
+}
+.check{
+    grid-area: check;
+}
+.leftbox{
+    grid-area: leftbox;
+}
+.rightbox{
+    grid-area: rightbox;
+}
+.check{
+    height: 6rem;
+} */
+
+
+
+.homediv{
+    display: flex;        
+    margin: 0rem auto;
+    margin-bottom: 1rem;
+}
+.rightbox{
+    width: 95%;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quote{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#dp{
+    border-radius: 50%;
+    margin: 1rem 0;
+    box-shadow: 0px 9px 30px rgba(108, 162, 255, 0.3);
+    
+} 
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+
+#itsme{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+#vg{
+    font-size: 3rem;
+    color: var(--headcolor);
+}
+#text{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+#text2{
+    color: var(--harry);
+    font-weight: 700;
+    font-size: 2rem;
+}
+#para{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.homecontactbtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: var(--harry);
+    color: white;
+    font-weight: 700;
+    border-radius: 2rem;
+}
+
+.homecontactbtn:hover{
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px){
+    .homediv{
+        display: flex;        
+    }
+    .check{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .homediv{
+        width: 75%;
+        padding: 6rem 0 0 0;
+    }
+    .leftbox{
+        width: 90%;
+    }
+}
+@media (min-width:550px){
+    #dp{
+        width: 15rem;
+    }
+    .social-media-icons{
+        gap: 0.5rem;
+    }
+    .smi{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .leftbox{
+        margin: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 550px){
+    .homediv{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .leftbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .rightbox{
+        margin: 1rem;
+    }
+    #quote{
+        width: 80%;
+    }
+    #dp{
+        width: 12rem;
+    }
+    .social-media-icons{
+        gap: 1rem;
+        width: 75%;
+    }
+    .smi{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    
+}
+@media (max-width:631px ){
+    #dp{
+        width: 13rem;
+    }
+}
+
+@media (min-width: 631px){
+    #itsme{
+        font-size: 2.5rem;
+        color: var(--text-color);
+    }
+    #vg{
+        font-size: 3.5rem;
+        color: var(--headcolor);
+    }
+    #text{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+    }
+    #text2{
+        color: var(--harry);
+        font-size: 2.5rem;
+    }
+    .social-media-icons{
+        gap: 0.7rem;
+    }
+    .smi{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+}
+
+
+
