@@ -10,6 +10,7 @@
     background-color: var(--background-color);
     font-family: 'Roboto', sans-serif;
     /* font-family: poppins; */
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -331,8 +332,8 @@
         width: 75%;
     }
     .smi{
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 2rem;
+        height: 2rem;
     }
     
 }
@@ -414,6 +415,7 @@
 }
 .rightabout{
     margin: 2rem;
+    margin-bottom: 0;
     width: 100%;
 }
 .leftabout{
@@ -452,7 +454,7 @@
 @media (min-width:940px){
     
     #rightpara{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     #no{
@@ -485,7 +487,7 @@
         font-size: 2rem;
     }
     #rightpara{
-        font-size: 1.1.7rem;
+        font-size: 1.2rem;
     }
     
     #no{
@@ -498,5 +500,162 @@
 @media (max-width:768px){
     .leftabout{
         width: 75%;
+    }
+}
+
+/* ========================================================================================================================================= */
+
+.skilldiv{
+    padding: 6rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.skillimgdiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:1rem 0 1rem 1rem;
+    /* gap: 70%; */
+    justify-content: center;
+}
+
+.imgskill{
+    width: 2.5rem;
+    /* height: 50%; */
+    margin-bottom: 0.5rem;
+}
+
+.skillimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillheading{
+    font-family: poppins;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.skilltext{
+    font-family:Poppins;
+    font-size: 100%;
+    color: var(--text-color);
+}
+@media (min-width:550px){
+    .imgskill{
+        width: 35%;
+    }
+}
+@media (max-width:550px){
+    .skillheading{
+        font-size: 2rem;
+    }
+    .skillimgdiv{
+        gap: 45%;
+    }
+}
+
+@media (max-width:400px){
+    .skillimgdiv{
+        gap: 20%;
+    }
+}
+
+.imgskill:hover{
+    transform : rotate(20deg)
+
+}
+/* ========================================================================================================================================================= */
+
+
+.qualification{
+    padding: 6rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.edudiv{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    /* height: 1rem; */
+    margin: 0 auto;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: 0px 9px 30px rgba(108, 162, 255, 0.3);    
+    /* border: 1px solid black; */
+}
+
+#edu{
+    display: flex;
+    left: 10;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+}
+
+.nsutimg{
+    width: 5%;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+#education{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--harry);
+}
+
+#ns, #yr, #branch{
+    display: flex;
+    align-items: center;
+}
+
+#calendar{
+    margin: 1rem;
+    color: var(--text-color);
+}
+#branch{
+    margin-left: 1rem;
+    /* margin-bottom: 1rem; */
+    padding-bottom: 1rem;
+}
+#branch, #year, #nsut{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width:550px){
+    .qualification{
+        font-size: 2rem;
+    }
+    #education{
+        font-size: 1.5rem;
+    }
+    .edudiv{
+        width: 80%;
+    }
+    .nsutimg{
+        width: 1.7rem;
     }
 }
