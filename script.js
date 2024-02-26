@@ -17,7 +17,7 @@ darkbtn_mode.addEventListener("click", () => {
         view.style.color = 'white';
         
         
-        darkbtn_mode.style.fontSize = "2rem";
+        // darkbtn_mode.style.fontSize = "2rem";
         darkbtn_mode.innerText = 'light_mode';
     } 
     
@@ -35,7 +35,7 @@ darkbtn_mode.addEventListener("click", () => {
         
         
         darkbtn_mode.innerText= 'dark_mode';
-        darkbtn_mode.style.fontSize = "2rem";
+        // darkbtn_mode.style.fontSize = "2rem";
     }
 });
 
