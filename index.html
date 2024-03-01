@@ -22,8 +22,9 @@
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <!-- <a href="#services" class="nav-link">Services</a> -->
+                <a href="#qualification" class="nav-link">Qualification</a>
+                <a href="#project" class="nav-link">Project</a>
                 <a href="#contact" class="nav-link">Contact Me</a>
             </nav>
 
@@ -74,17 +75,23 @@
                 </a>
             </div>
 
-            <div class="over-div" id="#services" onclick="closeNav()">
+            <div class="over-div" id="#qualification" onclick="closeNav()">
+                <a href="#qualification" class="ov">
+                    <span class="material-symbols-outlined">school</span>
+                    Qualification
+                </a>
+            </div>
+            <!-- <div class="over-div" id="#services" onclick="closeNav()">
                 <a href="#services" class="ov">
                     <span class="material-symbols-outlined">business_center</span>
                     Services
                 </a>
-            </div>
+            </div> -->
 
             <div class="over-div" id="#projects" onclick="closeNav()">
-                <a href="#projects" class="ov">
+                <a href="#project" class="ov">
                     <span class="material-symbols-outlined">badge</span>
-                    Projects
+                    Project
                 </a>
             </div>
 
@@ -201,6 +208,7 @@
     </div>
 </div>
 
+<!-- =============================================================================================================================================== -->
 <div id="skills" class="skilldiv">
     <div >
         <p class="skillheading">My Skillset</p>
@@ -228,7 +236,7 @@
 <!-- ============================================================================================================================================ -->
 
 
-<div>
+<div class="q" id="qualification">
     <div>
         <span class="qualification">Qualification</span>
     </div>
@@ -258,12 +266,99 @@
 
         <div >
             <span id="branch">
-                Computer Science and Engineering with Mathematics and Computing
+                Computer Science Engineering with Mathematics and Computing
             </span>
         </div>
         
     </div>
 
+</div>
+
+<!-- =========================================================================================================================================== -->
+
+<div id="project" class="collabb">
+
+    
+    <span class="project">
+        Project
+    </span>
+    
+
+    <div class="collabbox">
+        <div class="collableft">
+            <img class="collabimg" src="images/collab.png" alt="collabimg">
+        </div>
+
+        <div class="collabright">
+            
+            <span class="collabhead">
+                "Embarking on a new project?
+            </span> 
+            
+            <p class="collabpara">
+                I'm excited about the opportunity to discuss your vision and explore ways we can <b style="color: var(--headcolor);">collaborate</b> to craft something extraordinary. I bring a dynamic skill set to the table. Let's connect, dive into the details of your project, and discover how we can work together to bring your ideas to life. I'm eager to contribute my creativity and expertise to make our collaboration a success. Looking forward to chatting with you soon!"
+            </p>
+
+            <a href="#contact" class="homecontactbtn">
+                Contact Me
+                <span class="material-symbols-outlined" style="background-color: var(--harry);">send</span>
+            </a>
+        
+    </div>
+
+</div>
+
+</div>
+<!-- ======================================================================================================================================================================= -->
+
+<div id="contact" class="contact">
+    <span class="contacthead">Contact Me</span>
+
+    <div class="contactdiv">
+
+        <div class="contactleft">
+            <div class="call">
+                <span class="material-symbols-outlined" id="sign">call</span>
+                <span>+91 8XXXXXXXXX</span>
+            </div>
+            
+            <div class="mail">
+                <span class="material-symbols-outlined" id="sign">mail</span>
+                <span>Vishal90301@gmail.com</span>
+            </div>
+            
+            <div class="address">
+                <span class="material-symbols-outlined" id="sign">location_on</span>
+            <span>Delhi, India</span>
+        </div>
+    </div>
+    
+    <div class="contactright">
+        <form action="" class="contactform">
+            <div class="formname">
+                <label for="name" id="namelabel">Name</label>
+                <input  type="text" id="name" name="name" placeholder="Full Name">
+            </div>
+            
+            <div class="formmail">
+                <label for="emailID" id="maillabel">Email ID</label>
+                <input type="email" id="emailid" name="emailID" placeholder="abc@gmail.com">
+            </div>
+
+            <div class="formmsg">
+                <label for="textarea1" id="msglabel">Message</label>
+                <!-- <br> -->
+                <textarea name="textarea1" id="textarea1" cols="40" rows="10" placeholder="Enter text here..."></textarea>
+            </div>
+            
+            <div class="formsubmit">
+                <input type="submit" value="Send Message " id="submitform">
+                <span class="material-symbols-outlined" style="background-color: var(--harry);">send</span>
+            </div>
+            
+        </form>
+    </div>
+</div>
 </div>
 
 
