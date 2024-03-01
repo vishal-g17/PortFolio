@@ -12,12 +12,13 @@ darkbtn_mode.addEventListener("click", () => {
         root.style.setProperty('--text-color', '#ffffff');
         root.style.setProperty('--bgcolor', '#ffffff');
         root.style.setProperty('--headcolor', '#00EEFF');
+        root.style.setProperty('--form', '#211D35');
         
         darkbtn_mode.style.color = 'white';
         view.style.color = 'white';
         
         
-        // darkbtn_mode.style.fontSize = "2rem";
+        // darkbtn_mode.style.fontSize = "1.5rem";
         darkbtn_mode.innerText = 'light_mode';
     } 
     
@@ -29,13 +30,14 @@ darkbtn_mode.addEventListener("click", () => {
         root.style.setProperty('--text-color', '#333333');
         root.style.setProperty('--bgcolor', '#191627');
         root.style.setProperty('--headcolor', '#027d86');
+        root.style.setProperty('--form', '#f2eafd');
         
         darkbtn_mode.style.color = 'black';
         view.style.color = 'black';
         
         
         darkbtn_mode.innerText= 'dark_mode';
-        // darkbtn_mode.style.fontSize = "2rem";
+        // darkbtn_mode.style.fontSize = "1.5rem";
     }
 });
 
