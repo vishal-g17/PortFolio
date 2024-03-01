@@ -27,6 +27,7 @@
     --darkharry: #7E22CE;
     --white: #ffffff;
     --headcolor: #02828b;
+    --form: #f2eafd
 }
 
 #vb{
@@ -235,7 +236,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .homecontactbtn{
@@ -273,7 +274,7 @@
 @media (min-width: 768px){
     .homediv{
         width: 75%;
-        padding: 6rem 0 0 0;
+        padding: 7rem 0 0 0;
     }
     /* .leftbox{
         width: 90%;
@@ -354,7 +355,7 @@
     }
     #text{
         font-size: 2.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: var(--text-color);
     }
     #text2{
@@ -374,7 +375,7 @@
 
 
 .aboutdiv{
-    padding: 6rem 0 0 0;
+    padding: 7rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -506,7 +507,7 @@
 /* ========================================================================================================================================= */
 
 .skilldiv{
-    padding: 6rem 0 0 0;
+    padding: 7rem 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -543,7 +544,7 @@
     font-family: poppins;
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
 }
 
@@ -580,7 +581,7 @@
 
 
 .qualification{
-    padding: 6rem 0 0 0;
+    padding: 7rem 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,7 +589,7 @@
     font-weight: 600;
     font-size: 2.5rem;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .edudiv{
@@ -658,4 +659,197 @@
     .nsutimg{
         width: 1.7rem;
     }
+}
+/* ================================================================================================================================================== */
+.collabbox{
+    display: flex;
+    /* justify-content: ; */
+}
+
+.collabb{
+    padding: 7rem 0 0 0;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+.collabright{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
+
+}
+.collableft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+    /* height: 100%; */
+}
+.collabhead, .collabpara{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.collabhead{
+    font-size: 1 .5rem;
+    /* font-weight: 600; */
+    /* margin: 4rem;
+    margin-left: 0; */
+    margin-bottom: 2rem;
+    color: var(--harry);
+}
+
+.collabpara{
+    margin-bottom: 2rem;
+    /* margin: 4rem;
+    margin-top: 0;
+    margin-left: 0; */
+}
+.collabimg{
+    width: 90%;
+}
+
+@media (max-width:768px){
+    .collabb{
+        width: 100%;
+    }
+}
+
+@media (max-width:550px){
+    .collabbox{
+        flex-direction: column;
+    }
+    .collabpara{
+        font-size: 1.2rem;
+    }
+    .collabimg{
+        width: 80%;
+    }
+    .project{
+        font-size: 2rem;
+    }
+}
+
+/* ========================================================================================================================================== */
+.contacthead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+.contactdiv{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 75%;
+    margin: 0 auto;
+}
+
+.formname, .formmsg, .formmail{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    /* border: none; */
+}
+
+#name, #emailid, #textarea1{
+    background-color: var(--form);
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    color: var(--text-color);
+    /* height: 10rem; */
+}
+#name, #emailid{
+    height: 2.5rem;
+}
+.contact{
+    padding: 7rem 0 0 0;
+}
+
+.contactleft, .contactright{
+    margin: 1rem;
+}
+.contactleft{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.call, .mail, .address{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 1rem 0;
+    /* width: 30rem; */
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+#sign{
+    font-size: 200%;
+    color: var(--harry);
+    margin-right: 1rem;
+}
+
+#namelabel, #msglabel, #maillabel{
+    margin: 0.8rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.formsubmit{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 1rem 0;
+    border: 1px solid black;
+    width: 10rem;
+    border-radius: 2rem;
+    color: whitesmoke;
+    background-color: var(--harry);
+}
+
+#submitform{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: var(--harry);
+    border-radius: 2rem;
+}
+
+@media (max-width: 550px){
+    .contactdiv{
+        flex-direction: column;
+        width: 100%;
+    }
+
 }
