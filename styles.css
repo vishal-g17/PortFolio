@@ -355,7 +355,7 @@
     }
     #text{
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         color: var(--text-color);
     }
     #text2{
@@ -375,7 +375,7 @@
 
 
 .aboutdiv{
-    padding: 7rem 0 0 0;
+    /* padding: 7rem 0 0 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -507,7 +507,7 @@
 /* ========================================================================================================================================= */
 
 .skilldiv{
-    padding: 7rem 0 0 0;
+    /* padding: 7rem 0 0 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,7 +581,7 @@
 
 
 .qualification{
-    padding: 7rem 0 0 0;
+    /* padding: 7rem 0 0 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -667,7 +667,7 @@
 }
 
 .collabb{
-    padding: 7rem 0 0 0;
+    /* padding: 7rem 0 0 0; */
     width: 75%;
     margin: 0 auto;
 }
@@ -715,8 +715,8 @@
 }
 
 .collabpara{
+    margin-right:1rem;
     margin-bottom: 2rem;
-    margin-right: 1rem;
     /* margin: 4rem;
     margin-top: 0;
     margin-left: 0; */
@@ -786,7 +786,7 @@
     height: 2.5rem;
 }
 .contact{
-    padding: 7rem 0 0 0;
+    /* padding: 7rem 0 0 0; */
 }
 
 .contactleft, .contactright{
@@ -839,8 +839,8 @@
     border: none;
     font-size: 1rem;
     padding: 1rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0;
+    padding-left: 1rem;
     font-weight: 600;
     color: whitesmoke;
     background-color: var(--harry);
@@ -852,5 +852,109 @@
         flex-direction: column;
         width: 100%;
     }
+    .contacthead{
+        font-size: 2rem;
+    }
+}
 
+/* ================================================================================================================================================================= */
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 1.5rem; */
+    height: 4rem;
+    padding: 1rem;
+    box-shadow: 0px 9px 30px rgba(108, 162, 255, 0.3);    
+
+}
+
+.smi2{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.2rem;
+}
+
+.footname{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.copyright, .footname, .footersmi{
+    color: var(--text-color);
+}
+
+.footimg{
+    width: 1.5rem;
+    height: 1rem;
+}
+
+.footersmi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:768px){
+    .foot{
+        flex-direction: column;
+    }
+    .footersmi{
+        margin: 1rem;    }
+}
+
+/* ================================================================================================================================================================== */
+
+
+
+
+
+
+@media (min-width:768px){
+    #spacer{
+        display: none;
+    }
+    .aboutdiv, .skilldiv, .qualification, .collabb, .contact{
+        padding: 7rem 0 0 0;
+    }
+}
+
+@media (max-width:768px){
+    .homediv, .collabbox{
+        margin-bottom: 2rem;
+    }
+    .textabout{
+        margin-top: 1rem;
+    }
+    .aboutboth, .skilldiv, .q{
+        margin-bottom: 2rem;
+    }
+    .skillheading{
+        margin-top: 1rem;
+    }
+    .qualification, .project, .contacthead{
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width:550px){
+    .homediv{
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+}
+
+.cv:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.formsubmit:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#submitform:hover{
+    cursor: pointer;
 }
